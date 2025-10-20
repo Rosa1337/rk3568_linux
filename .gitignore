@@ -1,0 +1,10 @@
+#
+# Normal rules
+#
+#
+# Generated files
+#
+/IMAGE/
+/rockdev/
+/.rootfs/
+/br.log

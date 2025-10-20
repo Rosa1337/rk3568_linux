@@ -1,0 +1,17 @@
+The default compiler:
+配置环境
+./build.sh lunch
+----->choose 5
+5. BoardConfig-rk3568-evb1-ddr4-v10.mk
+完整编译
+./build.sh
+
+编译debian
+export RK_ROOTFS_SYSTEM=debian
+./build.sh
+提示输入密码
+密码是123456
+
+camera:ov5695
+test:
+/rockchip_test/camera# ./camera_rkisp_test.sh
