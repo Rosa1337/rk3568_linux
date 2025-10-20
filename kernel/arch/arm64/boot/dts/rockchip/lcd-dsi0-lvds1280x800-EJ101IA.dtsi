@@ -1,0 +1,128 @@
+/*
+ * Copyright (C) 2021 9tripod, Inc.
+ * arch/arm64/boot/dts/lcd-dsi0-lvds1280x800-EJ101IA.dtsi
+ * lcd model: EJ101IA
+ * resolution: 1280x800
+ * channel: lvds
+ */
+
+#include <dt-bindings/display/media-bus-format.h>
+
+/ {
+	panel {
+		compatible = "simple-panel";
+		backlight = <&backlight>;
+		power-supply = <&vcc3v3_lcd0_n>;
+		enable-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;//gpio0_a6
+		enable-delay-ms = <120>;
+		prepare-delay-ms = <120>;
+		unprepare-delay-ms = <120>;
+		disable-delay-ms = <120>;
+		bus-format = <MEDIA_BUS_FMT_RGB888_1X7X4_SPWG>;
+		width-mm = <217>;
+		height-mm = <136>;
+
+		display-timings {
+		native-mode = <&timing0>;
+		timing0: timing0 {
+			clock-frequency = <68000000>;
+			hactive = <1280>;
+			vactive = <800>;
+			hback-porch = <75>;
+			hfront-porch = <75>;
+			vback-porch = <10>;
+			vfront-porch = <10>;
+			hsync-len = <10>;
+			vsync-len = <3>;
+			hsync-active = <0>;
+			vsync-active = <0>;
+			de-active = <0>;
+			pixelclk-active = <1>;
+			swap-rb = <0>;
+			swap-rg = <0>;
+			swap-gb = <0>;
+		};
+	};
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+				dual-lvds-even-pixels;
+				panel_in_lvds: endpoint {
+					remote-endpoint = <&lvds_out_panel>;
+				};
+			};
+		};
+	};
+};
+
+&lvds {
+	status = "okay";
+
+	ports {
+		port@1 {
+			reg = <1>;
+
+			lvds_out_panel: endpoint {
+				remote-endpoint = <&panel_in_lvds>;
+			};
+		};
+	};
+};
+
+&backlight {
+	status = "okay";
+	//enable-gpios = <&gpio0 RK_PC1 GPIO_ACTIVE_HIGH>;
+};
+
+&video_phy0 {
+	status = "okay";
+};
+
+&lvds_in_vp1 {
+	status = "okay";
+};
+
+&lvds_in_vp2 {
+	status = "disabled";
+};
+
+&route_lvds {
+	status = "okay";
+	connect = <&vp1_out_lvds>;
+};
+
+&dsi0 {
+	status = "disabled";
+};
+
+&route_dsi0 {
+	status = "disabled";
+};
+
+&dsi0_in_vp0 {
+	status = "disabled";
+};
+
+&dsi0_in_vp1 {
+	status = "disabled";
+};
+
+&i2c1 {
+	status = "okay";
+	
+	ts@14 {
+		status = "okay";
+		compatible = "goodix,gt9xx";
+		reg = <0x14>;
+		touch-gpio = <&gpio0 RK_PB5 IRQ_TYPE_EDGE_RISING>;
+		reset-gpio = <&gpio0 RK_PB6 GPIO_ACTIVE_LOW>;
+		max-x = <1280>;
+		max-y = <800>;
+		//tp-size = <911>;
+	};	
+};
+

@@ -1,0 +1,149 @@
+/*
+ * mipi_dphy0 needs to be enabled
+ * when dsi0 is enabled
+ */
+&dsi0 {
+	status = "okay";
+	//rockchip,lane-rate = <1000>;
+	dsi0_panel: panel@0 {
+		status = "okay";
+		compatible = "simple-panel-dsi";
+		reg = <0>;
+		power-supply = <&vcc3v3_lcd0_n>;
+		reset-gpios = <&gpio4 RK_PC4 GPIO_ACTIVE_LOW>;
+		backlight = <&backlight>;
+		reset-delay-ms = <120>;
+		init-delay-ms = <120>;
+		enable-delay-ms = <120>;
+		prepare-delay-ms = <120>;
+		unprepare-delay-ms = <120>;
+		disable-delay-ms = <120>;
+		dsi,flags = <(MIPI_DSI_MODE_VIDEO | MIPI_DSI_MODE_VIDEO_BURST |
+			MIPI_DSI_MODE_LPM | MIPI_DSI_MODE_EOT_PACKET)>;
+		dsi,format = <MIPI_DSI_FMT_RGB888>;
+		dsi,lanes  = <4>;
+		panel-init-sequence = [
+			23 00 02 27 AA
+			23 00 02 48 02
+			23 00 02 B6 20
+			23 00 02 01 80
+			23 00 02 02 38
+			23 00 02 03 47
+			23 00 02 04 58
+			23 00 02 05 2C
+			23 00 02 06 94
+			23 00 02 07 00
+			23 00 02 08 04
+			23 00 02 09 05
+			23 00 02 0A 24
+			23 00 02 0B 02
+			23 00 02 0C 52
+			23 00 02 0D 01
+			23 00 02 0E 80
+			23 00 02 0F 20
+			23 00 02 10 20
+			23 00 02 11 03
+			23 00 02 12 1B
+			23 00 02 13 63
+			23 00 02 14 01
+			23 00 02 15 23
+			23 00 02 16 40
+			23 00 02 17 00
+			23 00 02 18 01
+			23 00 02 19 23
+			23 00 02 1A 40
+			23 00 02 1B 00
+			23 00 02 1E 46
+			23 00 02 51 30
+			23 00 02 1F 10
+			23 00 02 2A 01
+			05 78 01 11
+			05 00 01 29
+		];
+
+		panel-exit-sequence = [
+			05 32 01 28
+			05 78 01 10
+		];
+
+		disp_timings0: display-timings {
+			native-mode = <&dsi1_timing0>;
+			dsi1_timing0: timing0 {
+				clock-frequency = <148000000>;
+				hactive = <1920>;
+				vactive = <1080>;
+				hfront-porch = <88>;
+				hsync-len = <44>;
+				hback-porch = <148>;
+				vfront-porch = <4>;
+				vsync-len = <5>;
+				vback-porch = <36>;
+				hsync-active = <0>;
+				vsync-active = <0>;
+				de-active = <1>;
+				pixelclk-active = <0>;
+			};
+		};
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+				panel_in_dsi: endpoint {
+					remote-endpoint = <&dsi_out_panel>;
+				};
+			};
+		};
+	};
+
+	ports {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		port@1 {
+			reg = <1>;
+			dsi_out_panel: endpoint {
+				remote-endpoint = <&panel_in_dsi>;
+			};
+		};
+	};
+
+};
+
+&backlight {
+	status = "okay";
+	//enable-gpios = <&gpio0 RK_PC1 GPIO_ACTIVE_HIGH>;
+};
+
+&route_dsi0 {
+	status = "okay";
+	connect = <&vp1_out_dsi0>;
+};
+
+&dsi0_in_vp0 {
+	status = "disabled";
+};
+
+&dsi0_in_vp1 {
+	status = "okay";
+};
+
+&video_phy0 {
+	status = "okay";
+};
+
+&i2c1 {
+	status = "okay";
+
+	ts@40 {
+		compatible = "9tripod,gslx680";
+		reg = <0x40>;
+		touch-gpio = <&gpio0 RK_PB5 IRQ_TYPE_EDGE_RISING>;
+		reset-gpio = <&gpio0 RK_PB6 GPIO_ACTIVE_LOW>;
+		max-x = <1024>;
+		max-y = <600>;
+	};
+};
+
