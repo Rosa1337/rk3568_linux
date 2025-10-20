@@ -1,0 +1,253 @@
+2021-07-22 15:26:54 [DEBUG] RKISP2x_Tuner_v2 UI setup success.
+2021-07-22 15:26:55 [DEBUG] platformSetting QMap(("RK356X", "./config/RK356X_UI_Module_20210709.json"))
+2021-07-22 15:26:55 [DEBUG] UIGenerator init.
+2021-07-22 15:26:56 [DEBUG] "./config/RK356X_UI_Module_20210709.json"
+2021-07-22 15:27:10 [DEBUG] "/ae_calib"
+2021-07-22 15:27:10 [DEBUG] "/wb_v21"
+2021-07-22 15:27:10 [DEBUG] 66
+2021-07-22 15:27:10 [DEBUG] "/agamma_calib"
+2021-07-22 15:27:10 [DEBUG] "/ablc_calib"
+2021-07-22 15:27:10 [DEBUG] "/adegamma_calib"
+2021-07-22 15:27:10 [DEBUG] "/agic_calib_v21"
+2021-07-22 15:27:10 [DEBUG] "/adehaze_calib_v21"
+2021-07-22 15:27:10 [DEBUG] "/adpcc_calib"
+2021-07-22 15:27:10 [DEBUG] "/amerge_calib"
+2021-07-22 15:27:10 [DEBUG] "/adrc_calib"
+2021-07-22 15:27:10 [DEBUG] "/cpsl"
+2021-07-22 15:27:10 [DEBUG] "/orb"
+2021-07-22 15:27:10 [DEBUG] "/debayer"
+2021-07-22 15:27:10 [DEBUG] "/cproc"
+2021-07-22 15:27:10 [DEBUG] "/ie"
+2021-07-22 15:27:10 [DEBUG] "/lsc_v2"
+2021-07-22 15:27:10 [DEBUG] "/colorAsGrey"
+2021-07-22 15:27:10 [DEBUG] Can not find member:  "lumaDetect"
+2021-07-22 15:27:10 [DEBUG] "/aldch"
+2021-07-22 15:27:10 [DEBUG] "/ccm_calib"
+2021-07-22 15:27:10 [DEBUG] "/lut3d_calib"
+2021-07-22 15:27:10 [DEBUG] "/af"
+2021-07-22 15:27:10 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:27:10 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:27:10 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:27:10 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:27:10 [DEBUG] "/thumbnails"
+2021-07-22 15:27:10 [DEBUG] "/bayernr_v2"
+2021-07-22 15:27:10 [DEBUG] "/cnr_v1"
+2021-07-22 15:27:10 [DEBUG] "/ynr_v2"
+2021-07-22 15:27:10 [DEBUG] "/sharp_v3"
+2021-07-22 15:27:10 [DEBUG] "/sensor_calib"
+2021-07-22 15:27:10 [DEBUG] "/module_calib"
+2021-07-22 15:27:10 [DEBUG] "/sys_static_cfg"
+2021-07-22 15:27:10 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:32:35 [WARN] QLayout: Attempting to add QLayout "" to CompareViewer "", which already has a layout
+2021-07-22 15:32:35 [WARN] QLayout: Attempting to add QLayout "" to CompareViewer "", which already has a layout
+2021-07-22 15:34:29 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:30 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:32 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:34 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:38 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:38 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:39 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:40 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:40 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:41 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:49 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:50 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:56 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:56 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:34:56 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:35:15 [WARN] QLayout: Attempting to add QLayout "" to CompareViewer "", which already has a layout
+2021-07-22 15:35:15 [WARN] QLayout: Attempting to add QLayout "" to CompareViewer "", which already has a layout
+2021-07-22 15:35:30 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:35:31 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:35:32 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:35:33 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:35:42 [WARN] QAbstractItemView::setRootIndex failed : index must be from the currently set model
+2021-07-22 15:43:42 [DEBUG] RKISP2x_Tuner_v2 UI setup success.
+2021-07-22 15:43:42 [DEBUG] platformSetting QMap(("RK356X", "./config/RK356X_UI_Module_20210709.json"))
+2021-07-22 15:43:42 [DEBUG] UIGenerator init.
+2021-07-22 15:43:44 [DEBUG] "./config/RK356X_UI_Module_20210709.json"
+2021-07-22 15:43:45 [WARN] QFileInfo::absolutePath: Constructed with empty filename
+2021-07-22 15:43:56 [DEBUG] "/ablc_calib"
+2021-07-22 15:43:56 [DEBUG] "/adegamma_calib"
+2021-07-22 15:43:56 [DEBUG] "/adehaze_calib_v21"
+2021-07-22 15:43:56 [DEBUG] "/adpcc_calib"
+2021-07-22 15:43:56 [DEBUG] "/adrc_calib"
+2021-07-22 15:43:56 [DEBUG] "/ae_calib"
+2021-07-22 15:43:56 [DEBUG] "/af"
+2021-07-22 15:43:56 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:43:56 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:43:56 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:43:56 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:43:56 [DEBUG] "/agamma_calib"
+2021-07-22 15:43:56 [DEBUG] "/agic_calib_v21"
+2021-07-22 15:43:56 [DEBUG] "/aldch"
+2021-07-22 15:43:56 [DEBUG] "/amerge_calib"
+2021-07-22 15:43:56 [DEBUG] "/bayernr_v2"
+2021-07-22 15:43:56 [DEBUG] "/ccm_calib"
+2021-07-22 15:43:56 [DEBUG] "/cnr_v1"
+2021-07-22 15:43:56 [DEBUG] "/colorAsGrey"
+2021-07-22 15:43:56 [DEBUG] "/cproc"
+2021-07-22 15:43:56 [DEBUG] "/cpsl"
+2021-07-22 15:43:56 [DEBUG] "/debayer"
+2021-07-22 15:43:56 [DEBUG] "/ie"
+2021-07-22 15:43:56 [DEBUG] "/lsc_v2"
+2021-07-22 15:43:56 [DEBUG] Can not find member:  "lumaDetect"
+2021-07-22 15:43:56 [DEBUG] "/lut3d_calib"
+2021-07-22 15:43:56 [DEBUG] "/orb"
+2021-07-22 15:43:56 [DEBUG] "/sharp_v3"
+2021-07-22 15:43:56 [DEBUG] "/thumbnails"
+2021-07-22 15:43:56 [DEBUG] "/wb_v21"
+2021-07-22 15:43:56 [DEBUG] 66
+2021-07-22 15:43:56 [DEBUG] "/ynr_v2"
+2021-07-22 15:43:56 [DEBUG] "/sensor_calib"
+2021-07-22 15:43:56 [DEBUG] "/module_calib"
+2021-07-22 15:43:56 [DEBUG] "/sys_static_cfg"
+2021-07-22 15:44:09 [DEBUG] "/ablc_calib"
+2021-07-22 15:44:09 [DEBUG] "/adegamma_calib"
+2021-07-22 15:44:09 [DEBUG] "/adehaze_calib_v21"
+2021-07-22 15:44:09 [DEBUG] "/adpcc_calib"
+2021-07-22 15:44:09 [DEBUG] "/adrc_calib"
+2021-07-22 15:44:09 [DEBUG] "/ae_calib"
+2021-07-22 15:44:09 [DEBUG] "/af"
+2021-07-22 15:44:09 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:44:09 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:44:09 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:44:09 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 15:44:09 [DEBUG] "/agamma_calib"
+2021-07-22 15:44:09 [DEBUG] "/agic_calib_v21"
+2021-07-22 15:44:09 [DEBUG] "/aldch"
+2021-07-22 15:44:09 [DEBUG] "/amerge_calib"
+2021-07-22 15:44:09 [DEBUG] "/bayernr_v2"
+2021-07-22 15:44:09 [DEBUG] "/ccm_calib"
+2021-07-22 15:44:09 [DEBUG] "/cnr_v1"
+2021-07-22 15:44:09 [DEBUG] "/colorAsGrey"
+2021-07-22 15:44:09 [DEBUG] "/cproc"
+2021-07-22 15:44:09 [DEBUG] "/cpsl"
+2021-07-22 15:44:09 [DEBUG] "/debayer"
+2021-07-22 15:44:09 [DEBUG] "/ie"
+2021-07-22 15:44:09 [DEBUG] "/lsc_v2"
+2021-07-22 15:44:09 [DEBUG] Can not find member:  "lumaDetect"
+2021-07-22 15:44:09 [DEBUG] "/lut3d_calib"
+2021-07-22 15:44:10 [DEBUG] "/orb"
+2021-07-22 15:44:10 [DEBUG] "/sharp_v3"
+2021-07-22 15:44:10 [DEBUG] "/thumbnails"
+2021-07-22 15:44:10 [DEBUG] "/wb_v21"
+2021-07-22 15:44:10 [DEBUG] 66
+2021-07-22 15:44:10 [DEBUG] "/ynr_v2"
+2021-07-22 15:44:10 [DEBUG] "/sensor_calib"
+2021-07-22 15:44:10 [DEBUG] "/module_calib"
+2021-07-22 15:44:10 [DEBUG] "/sys_static_cfg"
+2021-07-22 16:00:22 [DEBUG] RKISP2x_Tuner_v2 UI setup success.
+2021-07-22 16:00:22 [DEBUG] platformSetting QMap(("RK356X", "./config/RK356X_UI_Module_20210709.json"))
+2021-07-22 16:00:22 [DEBUG] UIGenerator init.
+2021-07-22 16:00:23 [DEBUG] "./config/RK356X_UI_Module_20210709.json"
+2021-07-22 16:04:16 [DEBUG] "/ae_calib"
+2021-07-22 16:04:16 [DEBUG] "/wb_v21"
+2021-07-22 16:04:16 [DEBUG] 66
+2021-07-22 16:04:16 [DEBUG] "/agamma_calib"
+2021-07-22 16:04:16 [DEBUG] "/ablc_calib"
+2021-07-22 16:04:16 [DEBUG] "/adegamma_calib"
+2021-07-22 16:04:16 [DEBUG] "/agic_calib_v21"
+2021-07-22 16:04:16 [DEBUG] "/adehaze_calib_v21"
+2021-07-22 16:04:16 [DEBUG] "/adpcc_calib"
+2021-07-22 16:04:16 [DEBUG] "/amerge_calib"
+2021-07-22 16:04:16 [DEBUG] "/adrc_calib"
+2021-07-22 16:04:16 [DEBUG] "/cpsl"
+2021-07-22 16:04:16 [DEBUG] "/orb"
+2021-07-22 16:04:16 [DEBUG] "/debayer"
+2021-07-22 16:04:16 [DEBUG] "/cproc"
+2021-07-22 16:04:16 [DEBUG] "/ie"
+2021-07-22 16:04:16 [DEBUG] "/lsc_v2"
+2021-07-22 16:04:16 [DEBUG] "/colorAsGrey"
+2021-07-22 16:04:16 [DEBUG] Can not find member:  "lumaDetect"
+2021-07-22 16:04:16 [DEBUG] "/aldch"
+2021-07-22 16:04:16 [DEBUG] "/ccm_calib"
+2021-07-22 16:04:16 [DEBUG] "/lut3d_calib"
+2021-07-22 16:04:16 [DEBUG] "/af"
+2021-07-22 16:04:16 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 16:04:16 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 16:04:16 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 16:04:16 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-22 16:04:16 [DEBUG] "/thumbnails"
+2021-07-22 16:04:16 [DEBUG] "/bayernr_v2"
+2021-07-22 16:04:16 [DEBUG] "/cnr_v1"
+2021-07-22 16:04:16 [DEBUG] "/ynr_v2"
+2021-07-22 16:04:16 [DEBUG] "/sharp_v3"
+2021-07-22 16:04:16 [DEBUG] "/sensor_calib"
+2021-07-22 16:04:16 [DEBUG] "/module_calib"
+2021-07-22 16:04:16 [DEBUG] "/sys_static_cfg"
+2021-07-22 16:04:16 [DEBUG] Incorrect size: [ 1  , 0 ]
+2021-07-23 17:12:35 [DEBUG] RKISP2x_Tuner_v2 UI setup success.
+2021-07-23 17:12:35 [DEBUG] platformSetting QMap(("RK356X", "./config/RK356X_UI_Module_20210709.json"))
+2021-07-23 17:12:35 [DEBUG] UIGenerator init.
+2021-07-23 17:12:47 [DEBUG] Save network IP. IP:192.168.2.27
+2021-07-23 17:12:47 [DEBUG] Save network PORT. PORT:5543
+2021-07-23 17:12:49 [DEBUG] Connect timeout!
+2021-07-23 17:12:57 [DEBUG] Save network IP. IP:192.168.2.27
+2021-07-23 17:12:57 [DEBUG] Save network PORT. PORT:5543
+2021-07-23 17:12:57 [DEBUG] TcpConnected
+2021-07-23 17:12:57 [DEBUG] Connected!
+2021-07-23 17:12:58 [DEBUG] "./config/RK356X_UI_Module_20210709.json"
+2021-07-23 17:12:59 [WARN] QObject::connect: No such slot RKCaptureTool::read_data()
+2021-07-23 17:12:59 [WARN] QObject::connect:  (receiver name: 'RKCaptureToolClass')
+2021-07-23 17:13:17 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb5519d40), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520dfd0)
+2021-07-23 17:13:17 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb5519d40), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520dfd0)
+2021-07-23 17:13:17 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:13:25 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb0c4820), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520f150)
+2021-07-23 17:13:25 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb0c4820), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520f150)
+2021-07-23 17:13:25 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:13:35 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb564e620), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520e4f0)
+2021-07-23 17:13:35 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb564e620), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520e4f0)
+2021-07-23 17:13:35 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:13:46 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb55ab050), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb560ea10)
+2021-07-23 17:13:46 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb55ab050), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb560ea10)
+2021-07-23 17:13:46 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:13:54 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb564e7c0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb4ae8a40)
+2021-07-23 17:13:54 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb564e7c0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb4ae8a40)
+2021-07-23 17:13:54 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:14:24 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb239f70), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb385ba0)
+2021-07-23 17:14:24 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb239f70), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb385ba0)
+2021-07-23 17:14:24 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:14:37 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb544d950), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb5acd90)
+2021-07-23 17:14:37 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb544d950), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb5acd90)
+2021-07-23 17:14:37 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:14:47 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb2cba30), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb55ad9a0)
+2021-07-23 17:14:47 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb2cba30), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb55ad9a0)
+2021-07-23 17:14:47 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:14:55 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb4ae8b40), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb262250)
+2021-07-23 17:14:55 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb4ae8b40), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb262250)
+2021-07-23 17:14:55 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:15:02 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb385be0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb543200)
+2021-07-23 17:15:02 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bbb385be0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bbb543200)
+2021-07-23 17:15:02 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:15:13 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb554d6f0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520e3d0)
+2021-07-23 17:15:13 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb554d6f0), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb520e3d0)
+2021-07-23 17:15:13 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:15:20 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb554d730), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb6fdf180)
+2021-07-23 17:15:20 [WARN] QObject: Cannot create children for a parent that is in a different thread.
+(Parent is QTcpSocket(0x16bb554d730), parent's thread is QThread(0x16bb1fed0f0), current thread is QThread(0x16bb6fdf180)
+2021-07-23 17:15:20 [WARN] QObject::startTimer: Timers can only be used with threads started with QThread
+2021-07-23 17:15:34 [DEBUG] TcpDisConnected

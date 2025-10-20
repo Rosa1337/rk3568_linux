@@ -1,0 +1,808 @@
+{
+	"Header":	{
+		"Version":	"v1.0",
+		"ToolVersion":	"v2.0.0",
+		"Platform":	"RK356x",
+		"Date":	"2021.6.16"
+	},
+	"CIS_List":	{
+		"gc8034":	{
+			"resolution":	{
+				"width":	3264,
+				"height":	2448
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 16, 64, 0, 1, 64, 1024],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	16
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	3
+		},
+		"gc2385":	{
+			"resolution":	{
+				"width":	1600,
+				"height":	1200
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 17.06, 64, 0, 1, 64, 1092],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	17.06
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	0
+		},
+		"gc5025":	{
+			"resolution":	{
+				"width":	2592,
+				"height":	1944
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 8, 128, 0, 1, 128, 1024],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	8
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	0
+		},
+		"gc5035":	{
+			"resolution":	{
+				"width":	2592,
+				"height":	1944
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 8, 128, 0, 1, 128, 1024],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	8
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	0
+		},
+		"os04a10":	{
+			"resolution":	{
+				"width":	2688,
+				"height":	1520
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 246.45, 16, 0, 1, 16, 3943],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	15.5
+				},
+				"CISExtraAgainRange":	{
+					"Min":	3.5,
+					"Max":	54.25
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	15.9
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	2,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 10]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	2,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 10]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	2,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 10]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	1,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	1,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	1,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	0
+		},
+		"ov5695":	{
+			"resolution":	{
+				"width":	2592,
+				"height":	1944
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 15.5, 16, 0, 1, 16, 248],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	15.5
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	0
+		},
+		"ov8858":	{
+			"resolution":	{
+				"width":	3264,
+				"height":	2448
+			},
+			"Gain2Reg":	{
+				"GainMode":	"EXPGAIN_MODE_LINEAR",
+				"GainRange":	[1, 16, 128, 0, 1, 128, 2047],
+				"GainRange_len":	7
+			},
+			"Time2Reg":	{
+				"fCoeff":	[0, 0, 1, 0.5]
+			},
+			"CISGainSet":	{
+				"CISAgainRange":	{
+					"Min":	1,
+					"Max":	16
+				},
+				"CISExtraAgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISIspDgainRange":	{
+					"Min":	1,
+					"Max":	1
+				},
+				"CISHdrGainIndSetEn":	1
+			},
+			"CISTimeSet":	{
+				"Linear":	{
+					"CISTimeRegMin":	4,
+					"CISLinTimeRegMaxFac":	{
+						"fCoeff":	[1, 4]
+					},
+					"CISTimeRegOdevity":	{
+						"fCoeff":	[1, 0]
+					}
+				},
+				"Hdr":	[{
+						"name":	"HDR_TWO_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}, {
+						"name":	"HDR_THREE_FRAME",
+						"CISTimeRegUnEqualEn":	1,
+						"CISTimeRegMin":	4,
+						"CISHdrTimeRegSumFac":	{
+							"fCoeff":	[1, 4]
+						},
+						"CISTimeRegMax":	{
+							"Coeff":	[0, 0, 0]
+						},
+						"CISTimeRegOdevity":	{
+							"fCoeff":	[1, 0]
+						}
+					}]
+			},
+			"CISHdrSet":	{
+				"hdr_en":	0,
+				"hdr_mode":	"RK_AIQ_ISP_HDR_MODE_2_LINE_HDR",
+				"line_mode":	"RK_AIQ_SENSOR_HDR_LINE_MODE_STAGGER"
+			},
+			"CISDcgSet":	{
+				"Linear":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	1,
+					"sync_switch":	0,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				},
+				"Hdr":	{
+					"support_en":	0,
+					"dcg_optype":	"RK_AIQ_OP_MODE_AUTO",
+					"dcg_mode":	{
+						"Coeff":	[0, 0, 0]
+					},
+					"dcg_ratio":	3.5,
+					"sync_switch":	1,
+					"lcg2hcg_gain_th":	32,
+					"hcg2lcg_gain_th":	16
+				}
+			},
+			"CISExpUpdate":	{
+				"Linear":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	2
+				},
+				"Hdr":	{
+					"time_update":	2,
+					"gain_update":	2,
+					"dcg_update":	1
+				}
+			},
+			"CISMinFps":	10,
+			"CISFlip":	3
+		}
+	}
+}

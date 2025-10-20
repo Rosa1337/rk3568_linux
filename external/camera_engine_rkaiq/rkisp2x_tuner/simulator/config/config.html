@@ -1,0 +1,2063 @@
+<div id="isp_parameters" style="display:none;">
+<div id="PipeLine" name="ispmodule">
+<table name="pipeline" vhead="0" hhead="0" tsize="27x5" dtype="string">
+<tbody contenteditable="true">
+<tr><td>module</td><td>pipeline_en</td><td>version</td><td>dbgpng</td><td>dbgyuv</td></tr>
+<tr><td>BLC</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>DPC</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>AWBG</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>HDR_MERGE</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>BAYER_NR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>LSC</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>LSC2</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>HDR_TMO</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>ADRC</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>GIC</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKDM</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>CTK</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKGAMMA</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>WDR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKDEHAZE</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>CSM</td><td>enable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>CONV422</td><td>enable</td><td>V1</td><td>close</td><td>open</td></tr>
+<tr><td>RKCNR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>MFNR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKUVNR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>Y_NR</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKSHARPEN</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>RKEDGEFILTER</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>SCALING</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+<tr><td>CGC</td><td>disable</td><td>V1</td><td>close</td><td>open</td></tr>
+<tr><td>FISH</td><td>disable</td><td>V1</td><td>close</td><td>close</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="BLC" name="ispmodule">
+<table name="black_level" vhead="1" hhead="0" tsize="4x2" dtype="int">
+<tbody contenteditable="true">
+<tr><th>R_BLACK_LEVEL</th><td>256</td></tr>
+<tr><th>GR_BLACK_LEVEL</th><td>256</td></tr>
+<tr><th>GB_BLACK_LEVEL</th><td>256</td></tr>
+<tr><th>B_BLACK_LEVEL</th><td>256</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="DPCC" name="ispmodule">
+<table name="sw_dpcc_mode" vhead="1" hhead="1" tsize="2x14" dtype="string">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1500</th><th>1507</th><th>1510</th><th>3200</th><th>6400</th><th>12800</th><th>102400</th><th>204800</th></tr>
+<tr><th>mode_rk_0_img_1</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="BAYERNR" name="ispmodule">
+<table name="sw_rawnr_filtpar" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>filtPar</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_rawnr_lulevel0-7" vhead="0" hhead="1" tsize="2x8" dtype="int">
+<tbody contenteditable="true">
+<tr><th>lulevel0</th><th>lulevel1</th><th>lulevel2</th><th>lulevel3</th><th>lulevel4</th><th>lulevel5</th><th>lulevel6</th><th>lulevel7</th></tr>
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_rawnr_luratio0-7" vhead="1" hhead="1" tsize="9x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>luRatio0</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio3</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio4</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio5</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio6</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luRatio7</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<register name="sw_rawnr_lamda" value="0" dtype="int"></register>
+<register name="sw_rawnr_gauss_en" value="0" dtype="int"></register>
+<table name="sw_rawnr_fixw0-3" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>sw_rawnr_fixw0</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>sw_rawnr_fixw1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>sw_rawnr_fixw2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>sw_rawnr_fixw3</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="rbgain_offs_and_filp" vhead="1" hhead="0" tsize="4x2" dtype="int">
+<tbody contenteditable="true">
+<tr><th>Sw_rawnr_rgain_offs</th><td>0</td></tr>
+<tr><th>Sw_rawnr_rgain_filp</th><td>0</td></tr>
+<tr><th>Sw_rawnr_bgain_offs</th><td>0</td></tr>
+<tr><th>Sw_rawnr_bgain_filp</th><td>0</td></tr>
+</tbody>
+</table>
+
+<register name="sw_rawnr_edgesoftness" value="0.0" dtype="float"></register>
+<register name="sw_rawnr_gauss_weight0" value="0.00" dtype="float"></register>
+<register name="sw_rawnr_gauss_weight1" value="0.00" dtype="float"></register>
+<register name="sw_rawnr_bil_edge_filter" value="0" dtype="int"></register>
+<table name="sw_rawnr_bil_fltstreng" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>filtPar</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<register name="sw_rawnr_bil_edgesofts" value="0.0" dtype="float"></register>
+<register name="sw_rawnr_bil_softhld_ratio" value="0.0" dtype="float"></register>
+<register name="sw_rawnr_bil_reg_wgt" value="0.0" dtype="float"></register>
+</div>
+<div id="LSC" name="ispmodule">
+<table name="LSC_param_path" vhead="0" hhead="0" tsize="1x2" dtype="string">
+<tbody contenteditable="true">
+<tr><td>LSC</td><td>lsc_param_table\ref_lsc_gain.dat</td></tr>
+</tbody>
+</table>
+
+<table name="LSC2_param_path" vhead="0" hhead="0" tsize="1x2" dtype="string">
+<tbody contenteditable="true">
+<tr><td>LSC2</td><td>lsc2_param_table\ref_lsc2_gain.dat</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="3A" name="ispmodule">
+<table name="3a_param_path" vhead="0" hhead="0" tsize="1x2" dtype="string">
+<tbody contenteditable="true">
+<tr><td>3A</td><td>3a_param_table/stat3a_awb_params.dat</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="MERGE" name="ispmodule">
+<register name="sw_hdrmge_ms_dif_0p8" value="205" dtype="int"></register>
+<register name="sw_hdrmge_lm_dif_0p9" value="230" dtype="int"></register>
+<register name="sw_hdrmge_ms_dif_0p15" value="0" dtype="int"></register>
+<register name="sw_hdrmge_lm_dif_0p15" value="0" dtype="int"></register>
+<table name="sw_hdrmge_l0_y" vhead="0" hhead="0" tsize="1x17" dtype="int">
+<tbody contenteditable="true">
+<tr><td>512</td><td>796</td><td>946</td><td>1001</td><td>1017</td><td>1022</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td></tr>
+</tbody>
+</table>
+
+<table name="sw_hdrmge_l1_y" vhead="0" hhead="0" tsize="1x17" dtype="int">
+<tbody contenteditable="true">
+<tr><td>512</td><td>796</td><td>946</td><td>1001</td><td>1017</td><td>1022</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td><td>1023</td></tr>
+</tbody>
+</table>
+
+<table name="sw_hdrmge_e_y" vhead="0" hhead="0" tsize="1x17" dtype="int">
+<tbody contenteditable="true">
+<tr><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td><td>512</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="HDRTMO" name="ispmodule">
+<register name="sw_hdrtmo_lgmax" value="32768" dtype="int"></register>
+<register name="sw_hdrtmo_lgscl" value="4096" dtype="int"></register>
+<register name="sw_hdrtmo_lgscl_inv" value="4096" dtype="int"></register>
+<register name="sw_hdrtmo_clipratio0" value="64" dtype="int"></register>
+<register name="sw_hdrtmo_clipratio1" value="166" dtype="int"></register>
+<register name="sw_hdrtmo_clipgap0" value="12" dtype="int"></register>
+<register name="sw_hdrtmo_clipgap1" value="12" dtype="int"></register>
+<register name="sw_hdrtmo_ratiol" value="32" dtype="int"></register>
+<register name="sw_hdrtmo_hist_min" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_hist_low" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_hist_high" value="2553" dtype="int"></register>
+<register name="sw_hdrtmo_hist_0p3" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_hist_shift" value="3" dtype="int"></register>
+<register name="sw_hdrtmo_palpha_0p18" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_palpha_lw0p5" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_palpha_lwscl" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_maxpalpha" value="31" dtype="int"></register>
+<register name="sw_hdrtmo_maxgain" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_cfg_alpha" value="255" dtype="int"></register>
+<register name="sw_hdrtmo_set_gainoff" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgmin" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgmax" value="32768" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgmean" value="30105" dtype="int"></register>
+<register name="sw_hdrtmo_set_weightkey" value="0" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgrange0" value="23398" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgrange1" value="29234" dtype="int"></register>
+<register name="sw_hdrtmo_set_lgavgmax" value="29234" dtype="int"></register>
+<register name="sw_hdrtmo_set_palpha" value="307" dtype="int"></register>
+<register name="sw_hdrtmo_gain_ld_off1" value="10" dtype="int"></register>
+<register name="sw_hdrtmo_gain_ld_off2" value="5" dtype="int"></register>
+</div>
+<div id="RKDM" name="ispmodule">
+<table name="sw_debayer_filter1" vhead="0" hhead="0" tsize="1x5" dtype="char">
+<tbody contenteditable="true">
+<tr><td>2</td><td>-6</td><td>0</td><td>6</td><td>-2</td></tr>
+</tbody>
+</table>
+
+<table name="sw_debayer_filter2" vhead="0" hhead="0" tsize="1x5" dtype="char">
+<tbody contenteditable="true">
+<tr><td>2</td><td>-4</td><td>4</td><td>-4</td><td>2</td></tr>
+</tbody>
+</table>
+
+<register name="sw_debayer_gain_offset" value="4" dtype="int"></register>
+<table name="sw_debayer_sharp_strength" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>sharp_strength</th><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+</tbody>
+</table>
+
+<register name="sw_debayer_offset" value="1" dtype="int"></register>
+<table name="sw_debayer_hf_offset" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>hf_offset</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+</tbody>
+</table>
+
+<register name="sw_debayer_clip_en" value="1" dtype="int"></register>
+<register name="sw_debayer_filter_g_en" value="1" dtype="int"></register>
+<register name="sw_debayer_filter_c_en" value="1" dtype="int"></register>
+<register name="sw_debayer_thed0" value="3" dtype="int"></register>
+<register name="sw_debayer_thed1" value="6" dtype="int"></register>
+<register name="sw_debayer_dist_scale" value="8" dtype="int"></register>
+<register name="sw_debayer_cnr_strength" value="5" dtype="int"></register>
+<register name="sw_debayer_shift_num" value="2" dtype="int"></register>
+</div>
+<div id="CCM" name="ispmodule">
+<table name="LIGHT_NUM" vhead="0" hhead="0" tsize="1x1" dtype="int">
+<tbody contenteditable="true">
+<tr><td>7</td></tr>
+</tbody>
+</table>
+
+<table name="awb_parameter" vhead="1" hhead="0" tsize="7x5" dtype="int">
+<tbody contenteditable="true">
+<tr><th>A</th><td>1274</td><td>1024</td><td>1024</td><td>3241</td></tr>
+<tr><th>CWF</th><td>2143</td><td>1024</td><td>1024</td><td>2812</td></tr>
+<tr><th>D50</th><td>1857</td><td>1024</td><td>1024</td><td>1978</td></tr>
+<tr><th>D65</th><td>2319</td><td>1024</td><td>1024</td><td>1691</td></tr>
+<tr><th>D75</th><td>2355</td><td>1024</td><td>1024</td><td>1550</td></tr>
+<tr><th>HZ</th><td>1046</td><td>1024</td><td>1024</td><td>3925</td></tr>
+<tr><th>TL84</th><td>1877</td><td>1024</td><td>1024</td><td>2557</td></tr>
+</tbody>
+</table>
+
+<table name="regCoeff" vhead="1" hhead="1" tsize="15x13" dtype="int">
+<tbody contenteditable="true">
+<tr><th>light_type</th><th>regCoeff0</th><th>regCoeff1</th><th>regCoeff2</th><th>regCoeff3</th><th>regCoeff4</th><th>regCoeff5</th><th>regCoeff6</th><th>regCoeff7</th><th>regCoeff8</th><th>regOffsetR</th><th>regOffsetG</th><th>regOffsetB</th></tr>
+<tr><th>A_100</th><td>41</td><td>-7</td><td>-34</td><td>-60</td><td>66</td><td>-6</td><td>-5</td><td>-132</td><td>137</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>A_74</th><td>1</td><td>20</td><td>-21</td><td>-41</td><td>41</td><td>0</td><td>0</td><td>-72</td><td>72</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>CWF_100</th><td>92</td><td>-82</td><td>-11</td><td>-44</td><td>44</td><td>-0</td><td>9</td><td>-86</td><td>77</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>CWF_74</th><td>46</td><td>-43</td><td>-3</td><td>-21</td><td>16</td><td>5</td><td>17</td><td>-46</td><td>29</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D50_100</th><td>53</td><td>-33</td><td>-19</td><td>-41</td><td>66</td><td>-24</td><td>1</td><td>-75</td><td>74</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D50_74</th><td>14</td><td>-0</td><td>-14</td><td>-23</td><td>40</td><td>-17</td><td>9</td><td>-31</td><td>22</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D65_100</th><td>57</td><td>-42</td><td>-15</td><td>-31</td><td>58</td><td>-26</td><td>3</td><td>-68</td><td>64</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D65_74</th><td>19</td><td>-8</td><td>-11</td><td>-13</td><td>32</td><td>-19</td><td>12</td><td>-27</td><td>15</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D75_100</th><td>59</td><td>-41</td><td>-18</td><td>-32</td><td>62</td><td>-30</td><td>2</td><td>-61</td><td>58</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>D75_74</th><td>20</td><td>-7</td><td>-13</td><td>-14</td><td>36</td><td>-22</td><td>11</td><td>-21</td><td>9</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>HZ_100</th><td>36</td><td>18</td><td>-53</td><td>-78</td><td>70</td><td>8</td><td>-27</td><td>-171</td><td>198</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>HZ_74</th><td>-7</td><td>39</td><td>-33</td><td>-57</td><td>45</td><td>13</td><td>-20</td><td>-100</td><td>120</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>TL84_100</th><td>72</td><td>-60</td><td>-12</td><td>-45</td><td>57</td><td>-12</td><td>7</td><td>-86</td><td>80</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>TL84_74</th><td>29</td><td>-23</td><td>-6</td><td>-25</td><td>30</td><td>-5</td><td>14</td><td>-43</td><td>29</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="CCM_RGB2YUV_param" vhead="0" hhead="1" tsize="2x3" dtype="int">
+<tbody contenteditable="true">
+<tr><th>coeff0_r2y</th><th>coeff1_g2y</th><th>coeff2_b2y</th></tr>
+<tr><td>38</td><td>75</td><td>15</td></tr>
+</tbody>
+</table>
+
+<table name="ccm_bound_bit" vhead="0" hhead="1" tsize="2x2" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ccm_low_bound_pos_bit</th><th>ccm_hig_bound_pos_bit</th></tr>
+<tr><td>8</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="ccm_alpha_scale" vhead="1" hhead="1" tsize="2x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>ccm_alpha_scale</th><td>1.0</td><td>0.8</td><td>0.8</td><td>0.9</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td></tr>
+</tbody>
+</table>
+
+<table name="ccm_curve_data" vhead="0" hhead="1" tsize="18x1" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ccm_alpha_curve_data</th></tr>
+<tr><td>0</td></tr>
+<tr><td>64</td></tr>
+<tr><td>128</td></tr>
+<tr><td>192</td></tr>
+<tr><td>256</td></tr>
+<tr><td>320</td></tr>
+<tr><td>384</td></tr>
+<tr><td>448</td></tr>
+<tr><td>512</td></tr>
+<tr><td>576</td></tr>
+<tr><td>640</td></tr>
+<tr><td>704</td></tr>
+<tr><td>768</td></tr>
+<tr><td>832</td></tr>
+<tr><td>896</td></tr>
+<tr><td>960</td></tr>
+<tr><td>1024</td></tr>
+</tbody>
+</table>
+
+<table name="iso-sat" vhead="0" hhead="1" tsize="8x8" dtype="int">
+<tbody contenteditable="true">
+<tr><th>iso0</th><th>iso1</th><th>iso2</th><th>is3</th><th>sat0</th><th>sat1</th><th>sat2</th><th>sat3</th></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+<tr><td>1.00</td><td>4.00</td><td>8.00</td><td>16.00</td><td>100</td><td>100</td><td>90</td><td>50</td></tr>
+</tbody>
+</table>
+
+<table name="ccm_damp_enable" vhead="0" hhead="0" tsize="1x1" dtype="int">
+<tbody contenteditable="true">
+<tr><td>1</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="RKUVNR" name="ispmodule">
+<table name="step0-uvgrad" vhead="1" hhead="0" tsize="3x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>ratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>offset</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="step1-non_left_right_up_down" vhead="1" hhead="0" tsize="2x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>nonMed1</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>nonBf1</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step1-downSample" vhead="1" hhead="0" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>wStep1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hStep1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>meansize1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step1-median" vhead="1" hhead="0" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>medRatio1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>medSize1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isMedIIR1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step1-bf" vhead="1" hhead="0" tsize="8x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaR1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>uvgain1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>bfRatio1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>bfSize1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaD1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isRowIIR1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isYcopy1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step2-non_ext" vhead="1" hhead="0" tsize="3x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>block2-ext</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>nonMed2</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>nonBf2</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step2-downSample" vhead="1" hhead="0" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>wStep2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hStep2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>meanSize2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step2-median" vhead="1" hhead="0" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>medRatio2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>medSize2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isMedIIR2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step2-bf" vhead="1" hhead="0" tsize="8x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaR2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>uvgain2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>bfSize2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaD2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>bfRatio2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>isRowIIR2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isYcopy2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step3-non_left_right_up_down" vhead="1" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>nonBf3</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="step3-bf" vhead="1" hhead="0" tsize="8x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaR3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>uvgain3</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>bfRatio3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>bfSize3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sigmaD3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isRowIIR3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>isYcopy3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="kernel_3x3" vhead="0" hhead="0" tsize="1x3" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="kernel_5x5" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="kernel_9x9" vhead="0" hhead="0" tsize="1x9" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="kernel_9x9_num" vhead="0" hhead="0" tsize="1x1" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sigma-adj" vhead="1" hhead="0" tsize="2x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>ratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="threshold-adj" vhead="1" hhead="0" tsize="2x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>thre</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="RKGAMMA" name="ispmodule">
+<table name="gamma_table" vhead="0" hhead="0" tsize="2x45" dtype="int">
+<tbody contenteditable="true">
+<tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>80</td><td>96</td><td>112</td><td>128</td><td>160</td><td>192</td><td>224</td><td>256</td><td>320</td><td>384</td><td>448</td><td>512</td><td>640</td><td>768</td><td>896</td><td>1024</td><td>1280</td><td>1536</td><td>1792</td><td>2048</td><td>2560</td><td>3072</td><td>3584</td><td>4096</td></tr>
+<tr><td>0</td><td>6</td><td>11</td><td>17</td><td>22</td><td>28</td><td>33</td><td>39</td><td>44</td><td>55</td><td>66</td><td>77</td><td>88</td><td>109</td><td>130</td><td>150</td><td>170</td><td>210</td><td>248</td><td>286</td><td>323</td><td>393</td><td>460</td><td>525</td><td>586</td><td>702</td><td>809</td><td>909</td><td>1002</td><td>1172</td><td>1325</td><td>1462</td><td>1588</td><td>1811</td><td>2004</td><td>2174</td><td>2327</td><td>2590</td><td>2813</td><td>3006</td><td>3177</td><td>3467</td><td>3708</td><td>3915</td><td>4095</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="YNR" name="ispmodule">
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="ynr_sigma_curve_iso0" vhead="0" hhead="0" tsize="1x5" dtype="float">
+<tbody contenteditable="true">
+<tr><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td><td>0.000000000000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_ci_iso0" vhead="1" hhead="1" tsize="5x5" dtype="float">
+<tbody contenteditable="true">
+<tr><th>level</th><th>sw_ynr_lci</th><th>sw_ynr_lhci</th><th>sw_ynr_hlci</th><th>sw_ynr_hhci</th></tr>
+<tr><th>level1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>level4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="loFreqLumaNrCurve" vhead="0" hhead="1" tsize="7x26" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th><th>iso0_lumaPoint</th><th>iso0_ratio</th></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+<tr><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td><td>0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_lgain_dire_max" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>Lo_DirectionStrength</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_lgain_dire_min" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Lo_BfScale</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>level2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>level3</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>level4</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_lmerge" vhead="1" hhead="1" tsize="3x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Lo_DenoiseStrength</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>sw_ynr_lmerge_ratio</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>sw_ynr_lmerge_bound</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_lweit_flt" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Lo_DenoiseWeight</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="hiFreqLumaNrCurve" vhead="0" hhead="1" tsize="7x26" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th><th>iso0_luma</th><th>iso0_ratio</th></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+<tr><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td><td>0.0</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgain_sgm" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Hi_BfScale</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hwith_d" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hstrength" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>Hi_DenoiseStrength</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hmax_adjust" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>Hi_detailMinAdjDnW</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hweit" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Hi_DenoiseWeight</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hst_scale" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>iso_Hi_SoftThresholdScale</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th><th>iso0</th></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_ynr_hgrad_y_iso0" vhead="1" hhead="0" tsize="5x7" dtype="float">
+<tbody contenteditable="true">
+<tr><th>luma_point</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>level1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>level4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="GIC" name="ispmodule">
+<table name="sw_min_busy_thre" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>min_busy_thre</th><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td></tr>
+</tbody>
+</table>
+
+<table name="sw_min_grad_thr" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>min_grad_thr1</th><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr>
+<tr><th>min_grad_thr2</th><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr>
+</tbody>
+</table>
+
+<table name="sw_k_grad" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>k_grad1</th><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td></tr>
+<tr><th>k_grad2</th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+</tbody>
+</table>
+
+<table name="sw_smoothness_gb" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>smoothness_gb</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>smoothness_gb_weak</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_gb_thre" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>gb_thre</th><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr>
+</tbody>
+</table>
+
+<table name="sw_maxCor" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>maxCorV</th><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+<tr><th>maxCorVboth</th><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr>
+</tbody>
+</table>
+
+<table name="sw_maxCutV" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>maxCutV</th><td>80</td><td>80</td><td>80</td><td>80</td><td>160</td><td>160</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td></tr>
+</tbody>
+</table>
+
+<table name="sw_dark_thre" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>dark_thre</th><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td></tr>
+<tr><th>dark_threHi</th><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td><td>240</td></tr>
+</tbody>
+</table>
+
+<table name="sw_k_grad_dark" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>k_grad1_dark</th><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td></tr>
+<tr><th>k_grad2_dark</th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+</tbody>
+</table>
+
+<table name="sw_min_grad_thr_dark" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>min_grad_thr_dark1</th><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr>
+<tr><th>min_grad_thr_dark2</th><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr>
+</tbody>
+</table>
+
+<table name="sw_GValueLimit" vhead="1" hhead="1" tsize="3x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>GValueLimitLo</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>GValueLimitHi</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_textureStrength" vhead="1" hhead="1" tsize="2x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>textureStrength</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_Scale" vhead="1" hhead="1" tsize="3x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>ScaleLo</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>ScaleHi</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="noiseCurve" vhead="1" hhead="1" tsize="3x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>noiseCurve_0</th><td>0.4712</td><td>0.6682</td><td>0.9707</td><td>1.4513</td><td>1.9543</td><td>2.3809</td><td>2.8672</td><td>3.3716</td><td>3.8742</td><td>3.8742</td><td>3.8742</td><td>3.8742</td><td>3.8742</td><td>3.8742</td></tr>
+<tr><th>noiseCurve_1</th><td>1.2188</td><td>1.9900</td><td>3.1014</td><td>2.7964</td><td>6.0921</td><td>17.1859</td><td>38.1249</td><td>71.7295</td><td>121.3289</td><td>121.3289</td><td>121.3289</td><td>121.3289</td><td>121.3289</td><td>121.3289</td></tr>
+</tbody>
+</table>
+
+<table name="sw_globalStrength" vhead="1" hhead="1" tsize="2x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>globalStrength</th><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td></tr>
+</tbody>
+</table>
+
+<table name="noiseCut" vhead="1" hhead="1" tsize="4x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>sw_noise_coea</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sw_noise_coeb</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>sw_diff_clip</th><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td><td>32767</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edge_en" vhead="0" hhead="0" tsize="1x1" dtype="int">
+<tbody contenteditable="true">
+<tr><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_gr_ration" vhead="0" hhead="0" tsize="1x1" dtype="int">
+<tbody contenteditable="true">
+<tr><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_noise_cut_en" vhead="0" hhead="0" tsize="1x1" dtype="int">
+<tbody contenteditable="true">
+<tr><td>0</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="MFNR" name="ispmodule">
+<register name="sw_mfnr_max_lvl" value="0" dtype="uint32"></register>
+<register name="sw_mfnr_max_lvl_uv" value="0" dtype="uint32"></register>
+<register name="sw_mfnr_back_ref_num" value="0" dtype="uint32"></register>
+<table name="sw_mfnr_weight_limit_y" vhead="1" hhead="1" tsize="5x14" dtype="uint32">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>weight_limit_y0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>weight_limit_y1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>weight_limit_y2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>weight_limit_y3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_weight_limit_uv" vhead="1" hhead="1" tsize="4x14" dtype="uint32">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>weight_limit_uv0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>weight_limit_uv1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>weight_limit_uv2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_ratio_frq" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>ratio_frq0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>ratio_frq1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>ratio_frq2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>ratio_frq3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_luma_w_in_chroma" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>luma_w_in_chroma0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>luma_w_in_chroma1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>luma_w_in_chroma2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_noise_curve" vhead="1" hhead="1" tsize="6x14" dtype="exp">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>noise_curve0</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+<tr><th>noise_curve1</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+<tr><th>noise_curve2</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+<tr><th>noise_curve3</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+<tr><th>noise_curve4</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_noise_curve_x0" vhead="1" hhead="1" tsize="2x14" dtype="exp">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>sw_mfnr_noise_curve_x00</th><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td><td>0.000000e+000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_noiseprofile" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_noiseprofile0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_noiseprofile1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_noiseprofile2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_noiseprofile3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_noiseprofile" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_noiseprofile0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_noiseprofile1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_noiseprofile2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_noiseprofile3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_bfscale" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_bfscale0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_bfscale1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_bfscale2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_bfscale3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_bfscale" vhead="1" hhead="1" tsize="5x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_bfscale0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_bfscale1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_bfscale2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_bfscale3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lumanrpoint" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lumanrpoint0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrpoint1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrpoint2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrpoint3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrpoint4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrpoint5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lumanrcurve" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lumanrcurve0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrcurve1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrcurve2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrcurve3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrcurve4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lumanrcurve5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_denoisestrength" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_denoisestrength0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_lvl0_gfdelta" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_lvl0_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl0_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl0_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl0_gfdelta3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl0_gfdelta4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl0_gfdelta5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_lvl0_gfdelta" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_lvl0_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl0_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl0_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl0_gfdelta3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl0_gfdelta4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl0_gfdelta5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_lvl1_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_lvl1_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl1_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl1_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_lvl1_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_lvl1_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl1_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl1_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_lvl2_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_lvl2_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl2_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl2_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_lvl2_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_lvl2_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl2_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl2_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_lo_lvl3_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_lo_lvl3_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl3_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_lo_lvl3_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_y_hi_lvl3_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>y_hi_lvl3_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl3_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>y_hi_lvl3_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lo_noiseprofile" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lo_noiseprofile0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_noiseprofile1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_noiseprofile2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_hi_noiseprofile" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_hi_noiseprofile0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_noiseprofile1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_noiseprofile2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lo_bfscale" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lo_bfscale0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_bfscale1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_bfscale2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_hi_bfscale" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_hi_bfscale0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_bfscale1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_bfscale2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lumanrpoint" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lumanrpoint0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrpoint1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrpoint2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrpoint3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrpoint4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrpoint5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lumanrcurve" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lumanrcurve0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrcurve1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrcurve2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrcurve3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrcurve4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lumanrcurve5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_denoisestrength" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_denoisestrength0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lo_lvl0_gfdelta" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lo_lvl0_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl0_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl0_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl0_gfdelta3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl0_gfdelta4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl0_gfdelta5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_hi_lvl0_gfdelta" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_hi_lvl0_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl0_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl0_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl0_gfdelta3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl0_gfdelta4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl0_gfdelta5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lo_lvl1_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lo_lvl1_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl1_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl1_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_hi_lvl1_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_hi_lvl1_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl1_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl1_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_lo_lvl2_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_lo_lvl2_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl2_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_lo_lvl2_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_uv_hi_lvl2_gfdelta" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>uv_hi_lvl2_gfdelta0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl2_gfdelta1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>uv_hi_lvl2_gfdelta2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_lvl0_gfsigma" vhead="1" hhead="1" tsize="7x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>lvl0_gfsigma0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl0_gfsigma1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl0_gfsigma2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl0_gfsigma3</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl0_gfsigma4</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl0_gfsigma5</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_lvl1_gfsigma" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>lvl1_gfsigma0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl1_gfsigma1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl1_gfsigma2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_lvl2_gfsigma" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>lvl2_gfsigma0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl2_gfsigma1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl2_gfsigma2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_mfnr_lvl3_gfsigma" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>lvl3_gfsigma0</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl3_gfsigma1</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th>lvl3_gfsigma2</th><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="SHARP" name="ispmodule">
+<table name="sw_sharp_lhRatio" vhead="1" hhead="1" tsize="3x15" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>lratio</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>hratio</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_sharp_ratio" vhead="1" hhead="1" tsize="3x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>mf_sharp_ratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hf_sharp_ratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_luma_point" vhead="0" hhead="1" tsize="2x8" dtype="int">
+<tbody contenteditable="true">
+<tr><th>luma_point0</th><th>luma_point1</th><th>luma_point2</th><th>luma_point3</th><th>luma_point4</th><th>luma_point5</th><th>luma_point6</th><th>luma_point7</th></tr>
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_luma_sigma" vhead="1" hhead="1" tsize="9x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>luma_sigma0</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma1</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma2</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma3</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma4</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma5</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma6</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>luma_sigma7</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_pbf_strength" vhead="1" hhead="1" tsize="3x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>pbf_gain</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>pbf_ratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_pbf_add" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>pbf_add</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_mf_clip_pos" vhead="1" hhead="1" tsize="9x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>mf_clip_pos0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos4</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos5</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>mf_clip_pos7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_mf_clip_neg" vhead="1" hhead="1" tsize="9x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>mf_clip_neg0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg5</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg6</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>mf_clip_neg7</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_hf_clip" vhead="1" hhead="1" tsize="9x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>hf_clip0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip4</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip5</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hf_clip7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_bf_strength" vhead="1" hhead="1" tsize="4x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>mbf_gain</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>hbf_gain</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>hbf_ratio</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_mbf_add" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>mbf_add</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_hbf_add" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>hbf_add</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_sharp_local_sharp_strength" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>local_sharp_strength</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="EDGEFILTER" name="ispmodule">
+<table name="sw_edgefilter_edge_thed" vhead="1" hhead="1" tsize="2x15" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>50</th><th>100</th><th>200</th><th>400</th><th>800</th><th>1600</th><th>3200</th><th>6400</th><th>12800</th><th>25600</th><th>51200</th><th>102400</th><th>204800</th><th>409600</th></tr>
+<tr><th>edge_thed</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_src_wgt" vhead="1" hhead="1" tsize="2x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>src_wgt</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_alpha_adp_en" vhead="1" hhead="1" tsize="2x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>alpha_adp_en</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_denoise_strength" vhead="1" hhead="1" tsize="3x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>local_alpha</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>global_alpha</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_luma_point" vhead="0" hhead="1" tsize="2x8" dtype="int">
+<tbody contenteditable="true">
+<tr><th>luma_point0</th><th>luma_point1</th><th>luma_point2</th><th>luma_point3</th><th>luma_point4</th><th>luma_point5</th><th>luma_point6</th><th>luma_point7</th></tr>
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_noise_clip" vhead="1" hhead="1" tsize="9x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>noise_clip0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip4</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip5</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>noise_clip7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_clip_pos" vhead="1" hhead="1" tsize="9x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dog_clip_pos0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos4</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos5</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_pos7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_clip_neg" vhead="1" hhead="1" tsize="9x14" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dog_clip_neg0</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg2</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg3</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg4</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg5</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dog_clip_neg7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_alpha" vhead="1" hhead="1" tsize="9x14" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dog_alpha0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha1</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha2</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha3</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha4</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha5</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha6</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>dog_alpha7</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_direct_filter_coeff_ISO0" vhead="1" hhead="1" tsize="2x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+<table name="sw_edgefilter_dog_kernel_ISO0" vhead="1" hhead="1" tsize="6x6" dtype="float">
+<tbody contenteditable="true">
+<tr><th>row</th><th>col0</th><th>col1</th><th>col2</th><th>col3</th><th>col4</th></tr>
+<tr><th>0</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>1</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>2</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>3</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+<tr><th>4</th><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td></tr>
+</tbody>
+</table>
+
+</div>
+<div id="RKDEHAZE" name="ispmodule">
+<table name="iso_idx" vhead="0" hhead="0" tsize="1x9" dtype="int">
+<tbody contenteditable="true">
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+<table name="dehaze_en" vhead="1" hhead="1" tsize="6x10" dtype="int">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dehaze_en</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>dc_en</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><th>hist_en</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>hist_channel</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><th>gain_en</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+</tbody>
+</table>
+
+<table name="adp0-7" vhead="1" hhead="1" tsize="8x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dc_min_th</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>dc_max_th</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>yhist_th</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>yblk_th</th><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+<tr><th>dark_th</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>bright_min</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>bright_max</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="range_adj0-7" vhead="1" hhead="1" tsize="7x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>wt_max</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>air_min</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>air_max</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>tmax_base</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>tmax_off</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>tmax_max</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="hist_para0-4" vhead="1" hhead="1" tsize="5x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>hist_gratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hist_th_off</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hist_k</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hist_min</th><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td><td>0.000000</td></tr>
+</tbody>
+</table>
+
+<table name="enhance0-4" vhead="1" hhead="1" tsize="5x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>enhance_en</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>enhance_value</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hist_para_en</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>hist_scale</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="iir_control0-5" vhead="1" hhead="1" tsize="6x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>stab_fnum</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>sigma</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>wt_sigma</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>air_sigma</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+<tr><th>tmax_sigma</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="user_config0-5" vhead="1" hhead="1" tsize="6x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>cfg_alpha</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>cfg_wt</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>cfg_air</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>cfg_tmax</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>cfg_gratio</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+</tbody>
+</table>
+
+<table name="bi_para" vhead="1" hhead="1" tsize="5x10" dtype="float">
+<tbody contenteditable="true">
+<tr><th>ISO</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th></tr>
+<tr><th>dc_thed</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>dc_weitcur</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>air_thed</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+<tr><th>air_weitcur</th><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+</tbody>
+</table>
+
+<table name="dc_bf_h_5x5" vhead="0" hhead="0" tsize="5x5" dtype="int">
+<tbody contenteditable="true">
+<tr><td>12.0000</td><td>17.0000</td><td>19.0000</td><td>17.0000</td><td>12.0000</td></tr>
+<tr><td>17.0000</td><td>25.0000</td><td>28.0000</td><td>25.0000</td><td>17.0000</td></tr>
+<tr><td>19.0000</td><td>28.0000</td><td>32.0000</td><td>28.0000</td><td>19.0000</td></tr>
+<tr><td>17.0000</td><td>25.0000</td><td>28.0000</td><td>25.0000</td><td>17.0000</td></tr>
+<tr><td>12.0000</td><td>17.0000</td><td>19.0000</td><td>17.0000</td><td>12.0000</td></tr>
+</tbody>
+</table>
+
+<table name="air_bf_h_3x3" vhead="0" hhead="0" tsize="3x3" dtype="int">
+<tbody contenteditable="true">
+<tr><td>25.0000</td><td>28.0000</td><td>25.0000</td></tr>
+<tr><td>28.0000</td><td>32.0000</td><td>28.0000</td></tr>
+<tr><td>25.0000</td><td>28.0000</td><td>25.0000</td></tr>
+</tbody>
+</table>
+
+<table name="gaus_h_3x3" vhead="0" hhead="0" tsize="3x3" dtype="int">
+<tbody contenteditable="true">
+<tr><td>2.0000</td><td>4.0000</td><td>2.0000</td></tr>
+<tr><td>4.0000</td><td>8.0000</td><td>4.0000</td></tr>
+<tr><td>2.0000</td><td>4.0000</td><td>2.0000</td></tr>
+</tbody>
+</table>
+
+<table name="hist_conv_t0" vhead="0" hhead="0" tsize="2x3" dtype="int">
+<tbody contenteditable="true">
+<tr><td>1.0000</td><td>2.0000</td><td>1.0000</td></tr>
+<tr><td>-1.0000</td><td>-2.0000</td><td>-1.0000</td></tr>
+</tbody>
+</table>
+
+<table name="hist_conv_t1" vhead="0" hhead="0" tsize="2x3" dtype="int">
+<tbody contenteditable="true">
+<tr><td>1.0000</td><td>0.0000</td><td>-1.0000</td></tr>
+<tr><td>2.0000</td><td>0.0000</td><td>-2.0000</td></tr>
+</tbody>
+</table>
+
+<table name="hist_conv_t2" vhead="0" hhead="0" tsize="2x3" dtype="int">
+<tbody contenteditable="true">
+<tr><td>1.0000</td><td>-2.0000</td><td>1.0000</td></tr>
+<tr><td>2.0000</td><td>-4.0000</td><td>2.0000</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>

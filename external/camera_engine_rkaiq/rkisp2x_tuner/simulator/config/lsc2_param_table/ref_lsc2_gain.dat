@@ -1,0 +1,38 @@
+//light_num
+7
+
+//rgain-bgain
+    1.1908    3.4393
+    2.0204    2.8006
+    1.7310    2.1556
+    2.1458    1.7242
+    2.1520    1.5795
+    0.9765    3.9465
+    1.7572    2.5780
+
+//lightname-path
+A_100     lsc2_param_table/2688x1520_A_100_BasicTune.txt
+A_70     lsc2_param_table/2688x1520_A_70_BasicTune.txt
+CWF_100     lsc2_param_table/2688x1520_CWF_100_BasicTune.txt
+CWF_70     lsc2_param_table/2688x1520_CWF_70_BasicTune.txt
+D50_100     lsc2_param_table/2688x1520_D50_100_BasicTune.txt
+D50_70     lsc2_param_table/2688x1520_D50_70_BasicTune.txt
+D65_100     lsc2_param_table/2688x1520_D65_100_BasicTune.txt
+D65_70     lsc2_param_table/2688x1520_D65_70_BasicTune.txt
+D75_100     lsc2_param_table/2688x1520_D75_100_BasicTune.txt
+D75_70     lsc2_param_table/2688x1520_D75_70_BasicTune.txt
+HZ_100     lsc2_param_table/2688x1520_HZ_100_BasicTune.txt
+HZ_70     lsc2_param_table/2688x1520_HZ_70_BasicTune.txt
+TL84_100     lsc2_param_table/2688x1520_TL84_100_BasicTune.txt
+TL84_70     lsc2_param_table/2688x1520_TL84_70_BasicTune.txt
+
+//gain-vig
+
+
+
+
+
+
+
+//lsc2-damp-enable
+1
